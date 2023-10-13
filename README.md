@@ -3,7 +3,7 @@
 # Azure setup 
 1. Go to Microsoft Azure, click on hambuger sign, virtual machines, create
 2. create resource group, create VM name, Size: Standard_B1ms
-3. Under `Administrator account`, `Authentication type`, click `password` , create password (LMAO12345678!) and username (eugene2)
+3. Under `Administrator account`, `Authentication type`, click `password` , create password 
 4. Under `Inbound port rules`, `Select inbound ports`, drop down, click HTTP, HTTPS, SSH
 5. click next until review + create, click create and let the deployment complete
 6. click go to resource, under Networking, go to network settings, click create port rule, inbound port rule,
