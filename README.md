@@ -22,7 +22,7 @@
 19. Go to MySQL workbench and press create, put in your IP address, user name, and password from the shell.
 20. Test connection and press Ok 
 
-# MySQL Database
+# MySQL Workbench Database
 - In MySQL workbench, create a database:
   
 ```
@@ -44,3 +44,18 @@ CREATE TABLE medications (
 - Create fake data:
   
 ```
+INSERT INTO patients (first_name, last_name, date_of_birth) VALUES 
+('john', 'smith', '1921-10-15'),
+('kait', 'mom', '1911-10-17'),
+('bob', 'hum', '1931-10-20');
+
+INSERT INTO medications (medication_id,medication_name) VALUES
+(1, 'ibuprofen'), 
+(2, 'albuterol'), 
+(3, 'laxis');
+```
+# Flask integration: 
+1. I resued templates from the previous flask [assignment](https://github.com/EugeneHsiung/azure_flask_deployment1) and included a ```base.html``` , ```medications.html``` , and ```patients.html``` . These html files are representative of the database created in MySQL workbench. 
+2. The contents of the html files are shown in this [folder](https://github.com/EugeneHsiung/flask_4_databases_mysql_vm/blob/main/templates/base.html)
+3. A ```.gitignore``` file was created and inside the file has a ```.env``` file. This was created to store the IP address of the VM (virtual machine), database name, username, and password
+4. Lastly, I modified the app.py file with the appropriate html files. The contents can be seen in this [file](https://github.com/EugeneHsiung/flask_4_databases_mysql_vm/blob/main/app.py)
