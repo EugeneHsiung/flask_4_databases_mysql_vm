@@ -21,3 +21,26 @@
 18. Go to MySQL Workbench, press +, type in a connection name, copy ip address, make sure port is 3306, type in password
 19. Go to MySQL workbench and press create, put in your IP address, user name, and password from the shell.
 20. Test connection and press Ok 
+
+# MySQL Database
+- In MySQL workbench, create a database:
+  
+```
+create database heart; 
+use heart; 
+CREATE TABLE patients (
+    patient_id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    date_of_birth DATE
+);
+
+CREATE TABLE medications (
+    medication_id INT PRIMARY KEY AUTO_INCREMENT,
+    medication_name VARCHAR(100) NOT NULL
+);
+```
+
+- Create fake data:
+  
+```
