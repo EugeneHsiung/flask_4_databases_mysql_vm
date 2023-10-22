@@ -19,3 +19,5 @@
 16. To confirm: `show grants for Eugenius;` type in `\quit`, `sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf`, scroll down to blind-address and type in 0.0.0.0, click control O, enter, control X
 17. Type in: `/etc/init.d/mysql restart`, enter password
 18. Go to MySQL Workbench, press +, type in a connection name, copy ip address, make sure port is 3306, type in password
+19. Go to MySQL workbench and press create, put in your IP address, user name, and password from the shell.
+20. Test connection and press Ok 
